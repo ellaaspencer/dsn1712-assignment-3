@@ -1,0 +1,43 @@
+* {
+box-sizing: border-box;
+  }
+
+.wrapper {
+display: flex;
+max-width: 940px;
+background-color: #000;
+color: #fff;
+margin: 0 auto;
+align-items: center;
+justify-content: space-between;
+}
+
+.wrapper ul {
+display: flex;
+flex-direction: row;
+}
+
+.wrapper li {
+padding: 1em;
+}
+
+#hero {
+height: 600px;
+background-color: #ffffff;
+background-image: url(../images/hands-typing.jpg);
+background-position: center;
+background-size: cover;
+filter: grayscale(70%);
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#hero h1 {
+max-width: 60%;
+color: #fff;
+background-color: rgba(0, 0, 0, 0.5);
+text-shadow: 1px 1px 2px black;
+}
+
