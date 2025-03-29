@@ -7,6 +7,9 @@ display: flex;
 max-width: 940px;
 background-color: #000;
 color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+padding-right: 20px;
+padding-left: 20px;
 margin: 0 auto;
 align-items: center;
 justify-content: space-between;
@@ -19,6 +22,12 @@ flex-direction: row;
 
 .wrapper li {
 padding: 1em;
+list-style: none;
+}
+
+.wrapper a {
+color: #fff;
+text-decoration: none;
 }
 
 #hero {
@@ -41,27 +50,117 @@ max-width: 60%;
 color: #fff;
 background-color: rgba(0, 0, 0, 0.5);
 text-shadow: 1px 1px 2px black;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
 }
 
 #about-me .wrapper {
 max-width: 940px;
 margin: 0 auto;
+background-color: #fff;
+color: #000;
+font-family: Arial, Helvetica, sans-serif;
+
 display: grid;
 grid-template-columns: repeat(2,1fr);
 }
 
-#services .wrapper {
+#about-me h2, p {
+grid-column: 1;
+}
+
+#about-me img {
+grid-column: 2;
+width: 75%;
+}
+
+#services {
 max-width: 940px;
 background-color: #fafafa;
-margin: 0 auto;
-color: #000;
-display: flex;
-flex-direction: column;
+margin: auto;
+font-family: Arial, Helvetica, sans-serif;
+padding: 50px;
 }
 
-#services .wrapper .articles {
+#services h2 {
+text-align: center;
+}
+
+#services .articles {
 display: grid;
 grid-template-columns: repeat(3,1fr);
-gap: 10px;
+gap: 40px;
+margin: auto;
 }
 
+#services article {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+background-color: white;
+padding: 1em;
+}
+
+#services .articles .btn {
+background-color: black;
+color: white;
+padding: 15px;
+border: black 2px solid;
+border-radius: 4px;
+text-decoration: none;
+}
+
+#services .articles .btn:hover {
+background-color: white;
+color: black;
+padding: 15px;
+border: black 2px solid;
+border-radius: 4px;
+text-decoration: none;
+}
+
+#work {
+margin: auto;
+max-width: 940px;
+}
+
+#work .text {
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+
+#work .pictures {
+display: grid;
+grid-template-areas: 
+"div1 div1 div1 div2 div2 div2"
+"div3 div3 div4 div4 div5 div5"
+;
+}
+
+#work .image1 {
+grid-area: div1;
+}
+
+#work .image2 {
+grid-area: div2;
+}
+    
+#work .image3 {
+grid-area: div3;
+}
+    
+#work .image4 {
+grid-area: div4;
+}
+    
+#work .image5 {
+grid-area: div5;
+}    
+
+footer {
+max-width: 940px;
+margin: 0 auto;   
+background-color: #000;
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+}
