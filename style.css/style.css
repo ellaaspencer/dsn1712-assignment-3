@@ -57,7 +57,7 @@ background-color: rgba(0, 0, 0, 0.5);
 text-shadow: 1px 1px 2px black;
 font-family: Arial, Helvetica, sans-serif;
 text-align: center;
-font-size: 50px;
+font-size: 3rem;
 }
 
 #about-me .wrapper {
@@ -93,7 +93,7 @@ padding: 30px;
 #services h2 {
 max-width: 100%;
 text-align: center;
-font-size: 30px;
+font-size: 2rem;
 }
 
 #services .articles {
